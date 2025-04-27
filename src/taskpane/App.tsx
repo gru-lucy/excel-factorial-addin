@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 
 const STORAGE_KEY = "orientation";
 
@@ -14,8 +14,8 @@ export const App: React.FC = () => {
   };
 
   return (
-    <div style={{ padding: 24, fontFamily: "Segoe UI" }}>
-      <h2 style={{ marginTop: 0 }}>Factorial orientation</h2>
+    <div className="ms-welcome">
+      <h2 className="mt-0">Factorial orientation</h2>
 
       <label>
         <input
@@ -35,7 +35,7 @@ export const App: React.FC = () => {
         Column (↓)
       </label>
 
-      <p style={{ marginTop: 18 }}>
+      <p className="mt-18">
         Try <code>=TESTVELIXO.FACTORIALROW(7)</code> and switch the radio — Excel
         will respill automatically.
       </p>

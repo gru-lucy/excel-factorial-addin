@@ -15,6 +15,20 @@
      margin: 0;
      padding: 0;
  }
+
+ .ms-welcome {
+    padding: 24;
+    font-family: "Segoe UI"
+ }
+ 
+
+ .mt-0 {
+    margin-top: 0;
+ }
+
+ .mt-18 {
+    margin-top: 18;
+ }
  
  .ms-welcome__header {
     padding: 20px;
@@ -23,7 +37,10 @@
     display: -webkit-flex;
     display: flex;
     -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
  }
 
@@ -31,12 +48,16 @@
     display: -webkit-flex;
     display: flex;
     -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
     -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
     -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
     -webkit-flex: 1 0 0;
+    -ms-flex: 1 0 0;
     flex: 1 0 0;
     padding: 10px 20px;
  }
