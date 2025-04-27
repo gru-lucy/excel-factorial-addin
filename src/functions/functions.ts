@@ -1,4 +1,4 @@
-﻿/* global clearInterval, console, CustomFunctions, setInterval */
+﻿/* global clearInterval, console, CustomFunctions, setInterval, globalThis */
 
 /**
  * Adds two numbers.
@@ -84,8 +84,7 @@ export function factorialRow(n: number): string[] | string[][] {
   if (!Number.isFinite(n) || n < 1) throw new Error("N must be a positive integer");
   if (n > 500) throw new Error("N too large – max is 500");
 
-  const orientation =
-    (globalThis.localStorage?.getItem("orientation") ?? "row").toLowerCase();
+  const orientation = (globalThis.localStorage?.getItem("orientation") ?? "row").toLowerCase();
   const vertical = orientation === "column";
 
   // ---- session-wide factorial cache (shared runtime) -------------------

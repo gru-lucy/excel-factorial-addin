@@ -1,4 +1,11 @@
 {
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "globals": {
+    "globalThis": "readonly"
+  },
   "plugins": [
     "office-addins"
   ],
