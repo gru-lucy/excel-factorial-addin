@@ -68,7 +68,6 @@ export function logMessage(message: string): string {
   return message;
 }
 
-
 /* -----------------------------------------------------------------------
    NEW  –  TESTVELIXO.FACTORIALROW
 ------------------------------------------------------------------------ */
